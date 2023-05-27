@@ -1,0 +1,76 @@
+<!--UNIDAD4
+Autor:Evelyn Jasmin Montejano Castillo-->
+<DOCTYPE HTML>
+<html>
+	<head>
+		<title>Aspectos basicos de la computacion paralela.</title>
+		</head>
+		<body style="background-color:pink;">
+		 Para regresar al inicio,da click <a href="index.html"> aqui</a><br>
+			<h1 align="center"><p style="background-color:yellow;">4.1 ASPECTOS BASICOS DE LA COMPUTADORA PARALELA</p></h1>
+			<h3 align="aligned">La computación paralela es una forma de cómputo en la que muchas instrucciones se ejecutan 
+			simultáneamente,1 operando sobre el principio de que problemas grandes, a menudo se pueden dividir en unos más pequeños,
+			que luego son resueltos simultáneamente (en paralelo).<br>
+			Hay varias formas diferentes de computación paralela: paralelismo a nivel de bit, paralelismo a nivel de instrucción, paralelismo de datos y paralelismo de tareas.</h3>
+			<h1 align="center"><p style="background-color:yellow;">4.2,4.2.1 TIPOS DE COMPUTACION PARALELA Y CLASIFICACION</p></h1>
+			<h3 align="aligned">Paralelismo a nivel de bit:<br>
+			El aumento del tamaño de la palabra reduce el número de instrucciones que el
+			procesador debe ejecutar para realizar una operación en variables cuyos tamaños son mayores que la longitud de la palabra. 
+			Paralelismo a nivel de instrucción:<br>
+			Un programa de ordenador es, en esencia, una secuencia de instrucciones ejecutadas por un procesador. Estas instrucciones pueden
+			reordenarse y combinarse en grupos que luego son ejecutadas en paralelo sin cambiar el resultado del programa. Esto se conoce
+			como paralelismo a nivel de instrucción. Los avances en el paralelismo a nivel de instrucción dominaron la arquitectura de 
+			computadores desde mediados de 1980 hasta mediados de la década de 1990.
+			Paralelismo de datos:<br>
+			El paralelismo de datos es el paralelismo inherente en programas con ciclos, que se centra en la distribución de los datos entre
+			los diferentes nodos computacionales que deben tratarse en paralelo. La paralelización de ciclos conduce a menudo a secuencias
+			similares de operaciones —no necesariamente idénticas— o funciones que se realizan en los elementos de una gran estructura de datos.
+			Paralelismo de tareas:<br>
+			El paralelismo de tareas es la característica de un programa paralelo en la que cálculos completamente diferentes se pueden realizar
+			en cualquier conjunto igual o diferente de datos. Esto contrasta con el paralelismo de datos, donde se realiza el mismo cálculo 
+			en distintos o mismos grupos de datos. El paralelismo de tareas por lo general no escala con el tamaño de un problema.</h3>
+			<h1 align="center"><p style="background-color:blue;">4.2.2 ARQUITECTURA DE COMPUTADORAS SECUENCIALES</p></h1>
+			<h3 align="aligned">A diferencia de los sistemas combinacionales, en los sistemas secuenciales, los valores de las salidas, 
+			en un momento dado, no dependen exclusivamente de los valores de las entradas en dicho momento, sino también de los valores anteriores.
+			El sistema secuencial más simple es el biestable. La mayoría de los sistemas secuenciales están gobernados por señales de reloj.
+			A éstos se los denomina "síncronos" o "sincrónicos", a diferencia de los "asíncronos" o "asincrónicos" que son aquellos que no son 
+			controlados por señales de reloj. A continuación se indican los principales sistemas secuenciales que pueden encontrarse en forma
+			de circuito integrado o como estructuras en sistemas programados: * Contador * Registros</h3>
+			<h1 align="center"><p style="background-color:blue;">4.2.3 ORGANIZACION DE DIRECCIONES DE MEMORIA</p></h1>
+			<h3 align="aligned">Organización lógica Los programas a menudo están organizados en módulos, algunos de los cuales pueden ser 
+			compartidos por diferentes programas, algunos son de sólo-lectura y otros contienen datos que se pueden modificar. 
+			La gestión de memoria es responsable de manejar esta organización lógica, que se contrapone al espacio de direcciones físicas
+			lineales. Una forma de lograrlo es mediante la segmentación de memoria. Organización física La memoria suele dividirse en un 
+			almacenamiento primario de alta velocidad y uno secundario de menor velocidad. La gestión de memoria del sistema operativo
+			se ocupa de trasladar la información entre estos dos niveles de memoria</h3>
+			<h1 align="center"><p style="background-color:yellow;">4.3 SISTEMAS DE CONTROL(COMPARTIDA)</p></h1>
+			<h3 align="aligned">La memoria compartida por todos los procesadores y accesible desde cualquiera. Descompuesta en varios módulos 
+			para permitir el acceso concurrente de varios procesadores Cada procesador debe tener un espacio de direccionamiento suficientemente
+			amplio como para poder direccionarla completamente.
+			La memoria compartida se distribuye físicamente por todos los procesadores (memorias locales).
+			El conjunto de memorias locales forma el espacio de direccionamiento global accesible por todos los procesadores.</h3>
+			<h1 align="center"><p style="background-color:blue;">4.3.1 REDES DE INTERCONEXION DINAMICA(INDIRECTA)</p></h1>
+			<h3 align="aligned">Las redes de interconexión dinámicas son convenientes en los casos en que se desee una red de 
+			propósito general ya que son fácilmente reconfigurables. También por eso, este tipo de Redes facilitan mucho la escalabilidad.
+			En general, las redes dinámicas necesitan de elementos de conexión específicos como pueden ser árbitros de bus, conmutadores, etc.
+			Las principales topologías de redes dinámicas son las siguientes:<br> 
+			-Buses<br>
+			-Redes de líneas cruzadas o matriz de conmutación (crossbar)<br>
+			-Redes multietapa o MIN (Multistage Interconnection Network)<br>
+			o Redes Omega <br>
+			o Redes de línea base<br> 
+			o Redes Mariposa<br> 
+			o Redes Delta <br>
+			o Redes de Closs <br>
+			o Redes de Benes</h3>
+			<h1 align="center"><p style="background-color:yellow;">4.4 SISTEMAS DE MEMORIA DISTRIBUIDORA</p></h1>
+			<h3 align="aligned">Un cluster es una tipo de arquitectura paralela distribuida que consiste de un conjunto de computadores independientes 
+			(y bajo coste en principio) interconectados operando de forma conjunta como un único recurso computacional Sin embargo, cada 
+			computador puede utilizarse de forma independiente o separada.</h3>
+			<h1 align="center"><p style="background-color:blue;">4.4.1 REDES DE INTERCONEXION ESTATICAS</p></h1>
+			<h3 align="aligned">Las redes estáticas emplean enlaces directos fijos entre los nodos. Estos enlaces, una vez fabricado el sistema son difíciles
+			de cambiar, por lo que la escalabilidad de estas topologías es baja. Las redes estáticas pueden utilizarse con eficiencia en los sistemas en que
+			pueden predecirse el tipo de tráfico de comunicaciones entre sus procesadores.</h3>
+			<h1 align="center"><img src="u4.jpg"></h1>
+		</body>
+</html>
